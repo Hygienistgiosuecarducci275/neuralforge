@@ -2,7 +2,7 @@
   "api_id": 0,
   "api_hash": "YOUR_TELEGRAM_API_HASH",
   "enabled": false,
-  "model": "qwen3.5:35b-a3b",
+  "model": "qwen3.5:9b",
   "active_persona": "philosopher",
   "respond_to": "all",
   "whitelist": [],
@@ -11,7 +11,9 @@
   "max_response_length": 420,
   "cooldown_seconds": 10,
   "voice_reply": false,
+  "vision_reply": false,
+  "vision_model": "minicpm-v:8b",
   "personas": {
-    "_comment": "See telegram_bot.py DEFAULT_CONFIG for all personas"
+    "_comment": "Default personas are loaded from telegram_bot.py — add custom ones here"
   }
 }
