@@ -20,8 +20,8 @@
     <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" alt="Docker">
     <img src="https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white" alt="SQLite">
     <img src="https://img.shields.io/badge/Ubuntu-22.04+-E95420?logo=ubuntu&logoColor=white" alt="Ubuntu">
-    <img src="https://img.shields.io/github/license/DefinitelyN0tMe/ai-panel" alt="License">
-    <img src="https://img.shields.io/github/stars/DefinitelyN0tMe/ai-panel?style=social" alt="Stars">
+    <img src="https://img.shields.io/github/license/DefinitelyN0tMe/neuralforge" alt="License">
+    <img src="https://img.shields.io/github/stars/DefinitelyN0tMe/neuralforge?style=social" alt="Stars">
   </p>
 </p>
 
@@ -39,6 +39,12 @@
 - **🎨 Full Generation Pipeline** — Image (FLUX) → Video (Wan2.2) → 3D (Hunyuan3D) with smart VRAM management
 - **📊 69 API Endpoints** — everything is programmable, extensible, and automatable
 - **🔒 100% Local** — your data never leaves your machine. No API keys required for core features
+
+---
+
+### Table of Contents
+
+[What is this?](#what-is-this) · [AI Model Stack](#ai-model-stack) · [Features](#features-at-a-glance) · [Dashboard](#dashboard) · [Agents](#ai-agents) · [RAG](#rag-retrieval-augmented-generation) · [LoRA](#lora-fine-tuning) · [Pipeline](#generation-pipeline) · [Telegram Bot](#telegram-ai-bot) · [SMM](#smm-ai-department) · [MCP Server](#mcp-server--claude-code-integration) · [Quick Start](#quick-start) · [Requirements](#requirements) · [FAQ](#faq)
 
 ---
 
@@ -420,7 +426,7 @@ Trend Scout → Post Writer → Image Gen → Content Queue → Auto-Publish
 
 ```json
 // Add to your project's .mcp.json
-{ "mcpServers": { "ai-panel": { "command": "/path/to/ai-panel/run_mcp.sh" } } }
+{ "mcpServers": { "neuralforge": { "command": "/path/to/neuralforge/run_mcp.sh" } } }
 ```
 
 Now Claude can: check GPU status, start services, search your RAG database, run agent teams, generate images, manage fine-tuning — all from natural language.
@@ -432,8 +438,8 @@ Now Claude can: check GPU status, start services, search your RAG database, run 
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/DefinitelyN0tMe/ai-panel.git
-cd ai-panel
+git clone https://github.com/DefinitelyN0tMe/neuralforge.git
+cd neuralforge
 chmod +x install.sh
 ./install.sh
 ```
