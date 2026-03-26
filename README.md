@@ -394,6 +394,32 @@ docker run -d --name qdrant -p 6333:6333 -v qdrant_data:/qdrant/storage qdrant/q
 http://localhost:9000
 ```
 
+### 5. Set up Telegram Bot (optional)
+
+The Telegram AI Bot runs entirely from the panel UI — no code editing required.
+
+1. Open [t.me/BotFather](https://t.me/BotFather) → `/newbot` → get your **Bot Token**
+2. Get your Telegram **API ID** and **API Hash** from [my.telegram.org](https://my.telegram.org)
+3. In the panel → **Telegram** tab → paste your credentials → click **Start**
+4. The bot comes with 14 pre-configured personas (Philosopher, Crypto Maniac, etc.) — customize or create your own
+
+### 6. Set up SMM Publishing (optional)
+
+Publish AI-generated posts to 7 social networks. All configuration is done through the panel UI.
+
+1. In the panel → **SMM** tab → **+ New Profile** → follow the 4-step wizard
+2. On Step 2 (Platforms), each platform has built-in setup instructions:
+   - **Telegram**: Create bot via @BotFather → paste token + channel
+   - **Discord**: Server Settings → Integrations → Webhooks → copy URL
+   - **Twitter/X**: [developer.x.com](https://developer.x.com) → Create App → OAuth 1.0a keys
+   - **Facebook**: [developers.facebook.com](https://developers.facebook.com) → Create App (Business) → Page Token
+   - **Instagram**: Same Meta app → connect IG Business Account to FB Page
+   - **Threads**: Meta Developer App → Threads API → authorize
+   - **LinkedIn**: [linkedin.com/developers](https://linkedin.com/developers) → Create App → OAuth 2.0
+3. Scan trends → Generate posts → Publish to all platforms with one click
+
+> **Tip:** Start with just Telegram + Discord (easiest, no API keys needed beyond bot token/webhook). Add other platforms later.
+
 <br>
 
 ## Requirements
