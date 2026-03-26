@@ -19,8 +19,8 @@ from telethon import TelegramClient, events
 CONFIG_FILE = Path("/home/definitelynotme/Desktop/ai-panel/telegram_config.json")
 
 DEFAULT_CONFIG = {
-    "api_id": REDACTED_TG_ID,
-    "api_hash": "REDACTED_TG_HASH",
+    "api_id": 0,
+    "api_hash": "",
     "enabled": False,
     "model": "qwen3.5:35b-a3b",
     "active_persona": "philosopher",
