@@ -4,7 +4,7 @@
     <strong>Your entire AI stack. One dashboard. Zero cloud.</strong>
   </p>
   <p align="center">
-    LLMs &bull; Agents &bull; RAG &bull; Image/Video/3D &bull; Telegram Bot &bull; Voice Cloning &bull; Fine-Tuning
+    LLMs &bull; Agents &bull; RAG &bull; SMM (7 Platforms) &bull; Image/Video/3D &bull; Telegram Bot &bull; Fine-Tuning
   </p>
   <p align="center">
     <a href="#-quick-start"><img src="https://img.shields.io/badge/Quick_Start-blue?style=for-the-badge" alt="Quick Start"></a>
@@ -32,16 +32,16 @@ A self-hosted web panel (`localhost:9000`) that puts your **entire local AI infr
 ```
 ┌─────────────────────────────── AI Control Panel ───────────────────────────────┐
 │                                                                                │
-│   Dashboard        Agents          RAG           Telegram        LoRA          │
-│   ┌──────────┐    ┌──────────┐   ┌──────────┐  ┌──────────┐   ┌──────────┐   │
-│   │ GPU/VRAM │    │ 13 Roles │   │ Qdrant + │  │ 14 Meme  │   │ Unsloth  │   │
-│   │ Services │    │ Solo     │   │ ONNX GPU │  │ Personas │   │ LoRA     │   │
-│   │ Metrics  │    │ Team     │   │ 1800/sec │  │ Voice    │   │ 16 base  │   │
-│   │ Alerts   │    │ Orchestr │   │ Multi-DB │  │ Cloning  │   │ models   │   │
-│   └──────────┘    └──────────┘   └──────────┘  └──────────┘   └──────────┘   │
+│  Dashboard     Agents       RAG        Telegram     LoRA        SMM           │
+│  ┌────────┐   ┌────────┐  ┌────────┐  ┌────────┐  ┌────────┐  ┌────────┐    │
+│  │GPU/VRAM│   │13 Roles│  │Qdrant +│  │14 Meme │  │Unsloth │  │7 Socials│   │
+│  │Services│   │Solo    │  │ONNX GPU│  │Personas│  │LoRA    │  │Trend AI │   │
+│  │Metrics │   │Team    │  │1800/sec│  │Voice   │  │16 base │  │Post Gen │   │
+│  │Alerts  │   │Orchestr│  │Multi-DB│  │Cloning │  │models  │  │Calendar │   │
+│  └────────┘   └────────┘  └────────┘  └────────┘  └────────┘  └────────┘    │
 │                                                                                │
-│   Pipeline: Image ──→ Video ──→ 3D    │    MCP Server: 24 tools for Claude    │
-│   (ComfyUI)  (Wan2GP)  (Hunyuan3D)    │    + Music, TTS, STT, Search...      │
+│  Pipeline: Image ──→ Video ──→ 3D   │   MCP Server: 24 tools for Claude      │
+│  (ComfyUI)  (Wan2GP)  (Hunyuan3D)   │   + Music, TTS, STT, Search...        │
 └────────────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -60,6 +60,7 @@ A self-hosted web panel (`localhost:9000`) that puts your **entire local AI infr
 | **LoRA** | Fine-Tuning UI | 16 base models, dataset upload, live training output, adapter export |
 | **Gen** | Image→Video→3D Pipeline | Automated chain with smart VRAM switching between steps |
 | **MCP** | Claude Code Integration | 24 tools — let Claude manage your entire AI stack |
+| **SMM** | 7-Platform Social Media | Trend Scout → AI Post Writer → Image Gen → Auto-Publish to all platforms |
 | **Ext** | YAML Module System | Add any new service in 10 lines of YAML |
 
 <br>
@@ -273,6 +274,48 @@ Not a Telegram bot — responds **from your own account** via Telethon User API.
 - Session-based logs grouped by contact
 - Voice clone toggle from panel UI
 - Capybara persona sends random capybara photos via [capy.lol](https://capy.lol) API
+
+<br>
+
+## SMM AI Department
+
+Fully automated social media management system — from trend discovery to publishing across 7 platforms.
+
+**Complete Workflow:**
+```
+Trend Scout → Post Writer → Image Gen → Content Queue → Auto-Publish
+    │              │             │              │              │
+    ▼              ▼             ▼              ▼              ▼
+ 6 Sources     2-Pass LLM    ComfyUI FLUX   Schedule +     7 Platforms
+ (Reddit,HN,  (Scrape→       + ffmpeg      Calendar       simultaneously
+  GitHub,RSS,  Summary→       resize        view           with retry
+  SearXNG,     Platform
+  GoogTrends)  posts)
+```
+
+**7 Connected Platforms:**
+| Platform | Auth Method | Features |
+|---|---|---|
+| Telegram | Bot API | Text + Photo, channel posting |
+| Discord | Webhook | Text + File upload |
+| Twitter/X | OAuth 1.0a | Text + Media upload (Pay-Per-Use) |
+| Facebook | Page Token (permanent) | Text + Photo, Page posting |
+| Instagram | Graph API via FB | Photo + Caption (via imgur) |
+| Threads | Threads API | Text + Image |
+| LinkedIn | OAuth 2.0 | Text + Image (3-step upload) |
+
+**Key Features:**
+- **Trend Scout v2** — Multi-source intelligence with niche routing (tech, crypto, food, fitness, art, gaming, education, business), geo-detection, CJK filtering
+- **GitHub Trending** — Hybrid search (API + trending page scrape), categories (Agent/LLM/RAG/Tool), velocity ranking, "already posted" markers
+- **Post Writer** — 2-pass generation: scrapes source article → LLM summary → platform-specific posts with correct tone/length/hashtags. Custom context support
+- **Image Generation** — AI-generated prompts → ComfyUI FLUX Klein → auto-resize for each platform. ComfyUI auto-starts and stops (VRAM management)
+- **Content Queue** — SQLite-backed, edit/duplicate/regenerate posts, schedule with date/time picker, auto-publish via background scheduler
+- **Content Calendar** — Weekly view with navigation, color-coded by status
+- **Batch Generation** — Generate N days of content in one click with auto-scheduling
+- **Analytics** — Metrics collection from FB/IG/Threads/LinkedIn APIs, per-platform breakdown, top posts ranking
+- **Token Health** — Auto-refresh for expiring tokens (Threads, LinkedIn), dashboard monitoring
+- **Hashtag Manager** — Per-platform limits (Instagram 28, Twitter 3, Discord 0), auto-trim at publish
+- **Publish Preview** — Review all posts + image before publishing with platform selection
 
 <br>
 
